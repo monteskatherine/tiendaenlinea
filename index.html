@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique Mey - Página de Inicio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- CSS para la página de inicio -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Bootstrap CSS -->
+</head>
+<body>
+    <div class="container-fluid d-flex">
+        <aside class="sidebar">
+            <img src="img/mey.png" class="logo" alt="Logo de Boutique Mey">
+            <nav class="nav-links">
+                <button onclick="location.href='mujer.html'" class="btn btn-light">Mujer</button>
+                <button onclick="location.href='hombre.html'" class="btn btn-light">Hombre</button>
+                <button onclick="location.href='varios.html'" class="btn btn-light">Varios</button>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <h1>Bienvenido a Boutique Mey</h1>
+            <p>Explora nuestras categorías y encuentra lo que buscas.</p>
+        
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" onclick="mostrarDetalles('Producto 1', 'Descripción del producto 1', 'Talla M', '$20')">
+                        <img src="img/faja.jpeg" class="card-img-top" alt="Producto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Fajas</h5>
+                            <p class="card-text">Fajas bonitas, variedad de colores</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" onclick="mostrarDetalles('Producto 2', 'Descripción del producto 2', 'Talla M', '$30')">
+                        <img src="img/azul.jpeg" class="card-img-top" alt="Producto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Vestido Azul</h5>
+                            <p class="card-text">Vestido color azul diseño de mariposa. Talla M</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" onclick="mostrarDetalles('Producto 3', 'Descripción del producto 3', 'Talla L', '$25')">
+                        <img src="img/fajas.jpeg" class="card-img-top" alt="Producto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Fajas</h5>
+                            <p class="card-text">Variedad en colores</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" onclick="mostrarDetalles('Producto 4', 'Descripción del producto 4', 'Talla S', '$35')">
+                        <img src="img/corto.png" class="card-img-top" alt="Producto 4"> 
+                        <div class="card-body">
+                            <h5 class="card-title">Vestido corto</h5>
+                            <p class="card-text">Vestido corto blanco. Talla S</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" onclick="mostrarDetalles('Producto 5', 'Descripción del producto 5', 'Talla M', '$45')">
+                        <img src="img/rojo.png" class="card-img-top" alt="Producto 5"> 
+                        <div class="card-body">
+                            <h5 class="card-title">Blaser Rojo</h5>
+                            <p class="card-text">Blaser rojo Talla M</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" onclick="mostrarDetalles('Producto 6', 'Descripción del producto 6', 'Talla S', '$50')">
+                        <img src="img/vestido.png" class="card-img-top" alt="Producto 6"> 
+                        <div class="card-body">
+                            <h5 class="card-title">Vestido largo</h5>
+                            <p class="card-text">Vestido beige largo Talla S</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div id="detallesProducto" class="modal fade" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="tituloProducto"></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p id="descripcionProducto"></p>
+                            <p id="tallaProducto"></p>
+                            <p id="precioProducto"></p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script> <!-- Archivo JavaScript externo -->
+</body>
+</html>

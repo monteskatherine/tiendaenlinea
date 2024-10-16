@@ -1,0 +1,39 @@
+.card {
+    transition: transform 0.2s; /* Efecto de aumento suave */
+    height: 100%; /* Mantener altura uniforme */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumentar tamaño al pasar el mouse */
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.sidebar {
+    width: 300px; /* Ancho fijo para la barra lateral */
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.main-content {
+    flex: 1; /* Ocupa el espacio restante */
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se distribuyan en varias filas */
+}
+
+.col-md-4 {
+    flex: 1 1 30%; /* Tamaño mínimo de columna */
+    margin: 10px; /* Espacio entre las tarjetas */
+}
+
+.card-img-top {
+    width: 100%; /* Ajusta la imagen a 100% del contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
+}
